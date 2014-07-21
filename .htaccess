@@ -1,0 +1,9 @@
+RewriteEngine	on
+
+# on attrape toutes les requêtes arrivant par IPv4…
+RewriteCond	%{Remote_Addr}	[0-9]*\..*
+
+# …pour les rediriger sur la page de propagande,
+# mais ce uniquement si elles ne concernent déjà pas cette page
+# (on ne la redirige pas une page vers elle-même : les boucles, c’est Mal)
+RewriteRule	!(ipv4.html)	"/Uniquement IPv6/ipv4.html"	[R=307,L]

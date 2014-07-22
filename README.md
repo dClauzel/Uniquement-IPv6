@@ -29,7 +29,7 @@ Les avantages de s’appuyer sur le .htaccess sont :
 * une portée ciblée sur des répertoires choisis, ou même un seul fichier
 * la possibilité de déployer sur un hébergement mutualisé
 
-Une autre technique possible est de mettre en place 2 vhosts: celui en IPv4 fournissant le contenu réel, et celui en IPv4 fournissant la page de blocage.
+Une autre technique possible est de mettre en place 2 vhosts: celui en IPv6 fournissant le contenu réel, et celui en IPv4 fournissant la page de blocage.
 
 Ceci dit, attention: le principale problème du filtrage des requêtes arrivant en IPv4 est qu’en cas de dual stack IPv4/IPv6 on empêche l’utilisation du [Happy Eyeballs](https://en.wikipedia.org/wiki/Happy_Eyeballs).
 
